@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+   
+
+        <com.example.waimai.view.ChildLisView
+            android:id="@+id/lv_Left"
+            android:layout_width="80dip"
+            android:layout_height="match_parent"
+            android:divider="#999999"
+            android:dividerHeight="0.5dp"
+            android:scrollbars="none" />
+
+
+        <com.example.waimai.view.PinnedHeaderListView
+            android:id="@+id/lv_right"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#dcdcdc"
+            android:divider="#999999"
+            android:dividerHeight="0.5dp"
+             />
+
+</LinearLayout>

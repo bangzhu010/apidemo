@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.example.liangwenchao.appdemo.ui.view.customview.CustomImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        app:imageScaleType="center"
+        app:imageTitle="@drawable/ic_launcher"
+        app:mtitleText="hello andorid ! "
+        app:mtitleTextColor="#ff0000"
+        app:mtitleTextSize="30sp" />
+
+    <com.example.liangwenchao.appdemo.ui.view.customview.CustomImageView
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        app:imageScaleType="center"
+        app:imageTitle="@drawable/ic_launcher"
+        app:mtitleText="helloworldwelcome"
+        app:mtitleTextColor="#00ff00"
+        app:mtitleTextSize="20sp" />
+
+    <com.example.liangwenchao.appdemo.ui.view.customview.CustomImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        app:imageScaleType="center"
+        app:imageTitle="@drawable/ic_launcher"
+        app:mtitleText="妹子~"
+        app:mtitleTextColor="#ff0000"
+        app:mtitleTextSize="12sp" />
+
+</LinearLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_header"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="60dp"
+    android:background="#ffffff" >
+<RelativeLayout 
+    android:id="@+id/layout_header"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    >
+    <TextView
+        android:id="@+id/header"
+        android:layout_alignParentLeft="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="10sp"
+        android:text="r**8"
+         android:layout_marginLeft="10dp"
+        android:textColor="@android:color/black"
+         />
+    <RatingBar
+          android:layout_below="@id/header"
+    android:id="@+id/ratingBar1"
+    android:layout_width="wrap_content"
+     android:rating = "3.5"
+     android:numStars="5"
+     style="?android:attr/ratingBarStyleSmall"
+     android:stepSize = "0.5"
+    android:layout_height="wrap_content"
+      android:layout_marginLeft="10dp"
+         android:layout_marginTop="5dp"
+    android:layout_alignParentLeft="true" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="10sp"
+        android:layout_below="@id/ratingBar1"
+        android:layout_marginRight="10dp"
+        android:id="@+id/txt"
+        android:text="太慢了这味道不错攒了哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈"
+         android:layout_marginLeft="10dp"
+         android:layout_marginTop="5dp"
+        android:textColor="@android:color/black"
+         />
+    <View 
+         android:layout_width="match_parent"
+         android:layout_below="@id/txt"
+        android:layout_height="20dp"/>
+<TextView
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="10sp"
+        android:text="2015-10-27"
+        android:layout_marginRight="10dp"
+        android:textColor="@android:color/black"
+         />
+</RelativeLayout>
+
+
+
+</RelativeLayout>

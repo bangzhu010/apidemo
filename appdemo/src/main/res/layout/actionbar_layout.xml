@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/actionbar_default_height"
+    android:background="?attr/colorPrimary">
+
+    <TextView
+        android:id="@+id/textview"
+        style="@style/actionbar_title"
+        android:layout_centerVertical="true"
+        android:text="@string/app_name"/>
+
+    <ImageView
+        android:id="@+id/imageview"
+        style="@style/actionbar_icon"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/ic_launcher"/>
+
+
+
+</RelativeLayout>

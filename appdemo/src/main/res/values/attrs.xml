@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <attr name="mtitleText" format="string" />
+    <attr name="mtitleTextColor" format="color" />
+    <attr name="mtitleTextSize" format="dimension" />
+    <attr name="imageTitle" format="reference" />
+    <attr name="imageScaleType">
+        <enum name="fillXY" value="0" />
+        <enum name="center" value="1" />
+    </attr>
+
+
+    <declare-styleable name="CustomTitleView">
+        <attr name="mtitleText" />
+        <attr name="mtitleTextColor" />
+        <attr name="mtitleTextSize" />
+    </declare-styleable>
+    <declare-styleable name="CustomIamgeView">
+        <attr name="mtitleText" />
+        <attr name="mtitleTextColor" />
+        <attr name="mtitleTextSize" />
+        <attr name="imageTitle" />
+        <attr name="imageScaleType" />
+    </declare-styleable>
+    <declare-styleable name="CustomProgressBar">
+        <attr name="firstColor" format="color" />
+        <attr name="secondColor" format="color" />
+        <attr name="ringWidth" format="dimension" />
+        <attr name="speed" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="CustomVolumControlBar">
+        <attr name="firstColor" />
+        <attr name="secondColor" />
+        <attr name="circleWidth" format="dimension" />
+        <attr name="dotCount" format="integer" />
+        <attr name="splitSize" format="integer" />
+        <attr name="bg" format="reference" />
+
+    </declare-styleable>
+
+</resources>

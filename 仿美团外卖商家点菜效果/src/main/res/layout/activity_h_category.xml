@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#A0A0A0"
+    >
+   
+<com.example.waimai.RootLiner 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/rootliner" 
+     android:background="#A0A0A0">
+    
+    <RelativeLayout
+         android:id="@+id/imgRel"
+        android:layout_width="match_parent"
+        android:layout_height="140dp" >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/login_top_bg" />
+
+        <RelativeLayout
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="40dp" >
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:src="@drawable/icon_back_y" />
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:src="@drawable/icon_fansnum_like_on" />
+        </RelativeLayout>
+
+        <com.example.waimai.RoundImageView
+            android:id="@+id/tupian"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_below="@id/header"
+            android:layout_marginLeft="25dp"
+            android:src="@drawable/welcomefour" >
+        </com.example.waimai.RoundImageView>
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/tupian"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@id/tupian"
+            android:text="艾米烘焙"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/shuoming"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/name"
+            android:layout_below="@id/name"
+            android:layout_marginTop="5dp"
+            android:text="起送价￥30|无配送费|41分钟送达"
+            android:textColor="@android:color/white"
+            android:textSize="12sp" />
+
+        <com.example.waimai.TextChange
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/shuoming"
+            android:layout_below="@id/shuoming"
+            android:layout_marginTop="5dp"
+            android:singleLine="true"
+            android:text="专心做好健康斗魔西游怎么还不更，他妈的,啦啦啦啦啦啦啦，我是卖报的小画家"
+            android:textColor="@android:color/white"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/texframent"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_below="@id/imgRel"
+        android:background="@android:color/white" >
+
+        <View
+            android:id="@+id/line"
+            android:layout_width="match_parent"
+            android:layout_height="6dp"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="1dp"
+            android:background="@drawable/cart_listview_gap" />
+
+        <com.example.waimai.EngineLinearLayout
+            android:id="@+id/engine"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="点菜"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="评价"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="商家"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+        </com.example.waimai.EngineLinearLayout>
+    </FrameLayout>
+
+    <com.example.waimai.ScrollerLiner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollerLiner"
+        android:layout_below="@id/texframent" >
+        <LinearLayout
+             android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white" >
+        </android.support.v4.view.ViewPager>
+        </LinearLayout>
+    </com.example.waimai.ScrollerLiner>
+
+</com.example.waimai.RootLiner>
+ <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/ttileRelayout"
+        android:layout_alignParentTop="true"
+        android:background="@android:color/white"
+        >
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/icon_back_y" />
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/icon_fansnum_like_on" />
+    </RelativeLayout>
+</RelativeLayout>

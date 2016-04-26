@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.example.liangwenchao.appdemo.ui.view.customview.CustomProgressBar
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ff0000"
+        app:secondColor="#0000ff"
+        app:firstColor="#00ff00"
+        app:ringWidth="30dp"
+        app:speed="20"
+        />
+
+</LinearLayout>
