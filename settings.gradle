@@ -1,3 +1,4 @@
-include ':app', ':appdemo'
+include ':appdemo', ':weather'
 include ':apiDemos'
 include ':仿美团外卖商家点菜效果'
+include ':coolweathermaster'

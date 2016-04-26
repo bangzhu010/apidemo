@@ -7,6 +7,9 @@ The following files were *not* copied into the new Gradle project; you
 should evaluate whether these are still needed in your project and if
 so manually move them:
 
+* .gitignore
+* LICENSE
+* README.md
 * ic_launcher-web.png
 * proguard-project.txt
 
@@ -20,18 +23,17 @@ the .jar file in your project was of an older version than the
 dependency we picked, which could render the project not compileable.
 You can disable the jar replacement in the import wizard and try again:
 
-android-support-v4.jar => com.android.support:support-v4:19.+
+android-support-v4.jar => com.android.support:support-v4:18.+
 
 Moved Files:
 ------------
 Android Gradle projects use a different directory structure than ADT
 Eclipse projects. Here's how the projects were restructured:
 
-* AndroidManifest.xml => 仿美团外卖商家点菜效果\src\main\AndroidManifest.xml
-* assets\ => 仿美团外卖商家点菜效果\src\main\assets
-* libs\nineoldandroids-2.4.0.jar => 仿美团外卖商家点菜效果\libs\nineoldandroids-2.4.0.jar
-* res\ => 仿美团外卖商家点菜效果\src\main\res\
-* src\ => 仿美团外卖商家点菜效果\src\main\java\
+* AndroidManifest.xml => coolweathermaster\src\main\AndroidManifest.xml
+* libs\YoumiSdk_v4.06_2013-11-18.jar => coolweathermaster\libs\YoumiSdk_v4.06_2013-11-18.jar
+* res\ => coolweathermaster\src\main\res\
+* src\ => coolweathermaster\src\main\java\
 
 Missing Android Support Repository:
 -----------------------------------
