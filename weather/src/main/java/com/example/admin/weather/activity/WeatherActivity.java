@@ -14,6 +14,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.example.admin.weather.R;
+import com.example.admin.weather.service.AutoUpdateService;
 import com.example.admin.weather.util.Utility;
 import com.example.admin.weather.util.net.HttpCallbackListener;
 import com.example.admin.weather.util.net.HttpUtil;
@@ -67,6 +68,8 @@ public class WeatherActivity extends AppCompatActivity implements View.OnClickLi
         } else {//没有县级代号时候，就直接显示本地天气
             showWeather();
         }
+
+        startService(new Intent(this, AutoUpdateService.class));
 
     }
 
