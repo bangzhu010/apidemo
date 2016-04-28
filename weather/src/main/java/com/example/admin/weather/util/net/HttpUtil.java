@@ -1,5 +1,7 @@
 package com.example.admin.weather.util.net;
 
+import android.util.Log;
+
 import java.io.BufferedReader;
 import java.io.InputStream;
 import java.io.InputStreamReader;
@@ -31,6 +33,7 @@ public class HttpUtil {
                         response.append(line);
                     }
                     if (listener != null) {
+                        Log.i("lwc","address = " + address + " ,response = " + response);
                         listener.onFinish(response.toString());
                     }
                 } catch (Exception e) {

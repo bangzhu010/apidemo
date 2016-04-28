@@ -38,7 +38,7 @@ public class Utility {
      * 保存城市到数据库
      */
 
-    public synchronized boolean handleCitiesResponse(CoolWeatherDB coolWeatherDB, String response, int provinceId) {
+    public synchronized static boolean handleCitiesResponse(CoolWeatherDB coolWeatherDB, String response, int provinceId) {
         if (!TextUtils.isEmpty(response)) {
             String[] allCities = response.split(",");
             if (allCities != null && allCities.length > 0) {
@@ -59,7 +59,7 @@ public class Utility {
         return false;
     }
 
-    public synchronized boolean handleCountiesResponse(CoolWeatherDB coolWeatherDB,
+    public synchronized static boolean handleCountiesResponse(CoolWeatherDB coolWeatherDB,
                                                        String response, int cityId) {
         if (!TextUtils.isEmpty(response)) {
             String[] allCounties = response.split(",");
@@ -72,8 +72,9 @@ public class Utility {
                     county.setCountyName(array[1]);
                     county.setCityId(cityId);
                     coolWeatherDB.saveCounty(county);
-                    return true;
+
                 }
+                return true;
             }
         }
         return false;
