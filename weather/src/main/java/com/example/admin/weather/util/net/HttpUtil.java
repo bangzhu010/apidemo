@@ -33,7 +33,7 @@ public class HttpUtil {
                         response.append(line);
                     }
                     if (listener != null) {
-                        Log.i("lwc","address = " + address + " ,response = " + response);
+                        Log.i("lwc","address 111111111111= " + address + " ,response = " + response);
                         listener.onFinish(response.toString());
                     }
                 } catch (Exception e) {

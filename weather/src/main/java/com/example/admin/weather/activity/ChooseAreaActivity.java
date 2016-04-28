@@ -1,7 +1,10 @@
 package com.example.admin.weather.activity;
 
 import android.app.ProgressDialog;
+import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.text.TextUtils;
@@ -54,6 +57,13 @@ public class ChooseAreaActivity extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        SharedPreferences sp = PreferenceManager.getDefaultSharedPreferences(this);
+        if(sp.getBoolean("city_selected",false)){
+            Intent intent = new Intent(this,WeatherActivity.class);
+            startActivity(intent);
+            finish();
+            return;
+        }
         setContentView(R.layout.activity_choose_area);
         listView = (ListView) findViewById(R.id.list_view);
         titleText = (TextView) findViewById(R.id.title_text);
@@ -70,6 +80,13 @@ public class ChooseAreaActivity extends AppCompatActivity {
                 } else if (currentLevel == LEVEL_CITY) {
                     selectedCity = cityList.get(position);
                     queryCounties();
+                } else if(currentLevel==LEVEL_COUNTY){
+                    String countyCode = countyList.get(position).getCountyCode();
+                    Intent intent = new Intent(ChooseAreaActivity.this,WeatherActivity.class);
+                    intent.putExtra("county_code",countyCode);
+                    startActivity(intent);
+                    finish();
+
                 }
             }
         });
@@ -143,13 +160,10 @@ public class ChooseAreaActivity extends AppCompatActivity {
         } else {
             address = "http://www.weather.com.cn/data/list3/city.xml";
         }
-        Log.i("lwc","-------------- address = " +address);
         showProgressDialog();
         HttpUtil.sendHttpRequest(address, new HttpCallbackListener() {
             @Override
             public void onFinish(String response) {
-
-                Log.i("lwc","-------------- response = " +response);
                 boolean result = false;
                 if ("province".equals(type)) {
                     result = Utility.handleProvincesResponse(coolWeatherDB, response);
