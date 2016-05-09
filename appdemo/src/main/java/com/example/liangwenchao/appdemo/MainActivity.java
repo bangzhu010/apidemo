@@ -176,7 +176,7 @@ public class MainActivity extends BaseActivity
                 case R.id.nav_view:
                     fragment = new ViewFragment();
                     break;
-                case R.id.nav_gallery:
+                case R.id.nav_animation:
                     fragment = new AnimationFragment();
                     break;
                 case R.id.nav_slideshow:

@@ -4,29 +4,9 @@
     android:layout_height="match_parent">
 
 
-    <Button
-        android:id="@+id/btn_custom_title_view"
-        android:layout_width="match_parent"
-        android:textAllCaps="false"
-        android:layout_height="wrap_content"
-        android:text="CustomTitleView"/>
-    <Button
-        android:id="@+id/btn_custom_iamge_view"
-        android:layout_width="match_parent"
-        android:textAllCaps="false"
-        android:layout_height="wrap_content"
-        android:text="CustomImageView"/>
-    <Button
-        android:id="@+id/btn_custom_progress"
-        android:layout_width="match_parent"
-        android:textAllCaps="false"
-        android:layout_height="wrap_content"
-        android:text="CustomProgress"/>
-    <Button
-        android:id="@+id/btn_custom__volum_controlbar"
-        android:layout_width="match_parent"
-        android:textAllCaps="false"
-        android:layout_height="wrap_content"
-        android:text="CustomProgress"/>
+   <ListView
+       android:id="@+id/view_list"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"/>
 
 </LinearLayout>
