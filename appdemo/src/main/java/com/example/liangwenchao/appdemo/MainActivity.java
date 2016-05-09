@@ -27,7 +27,6 @@ import com.example.liangwenchao.appdemo.ui.base.fragment.BaseFragment;
 import com.example.liangwenchao.appdemo.ui.camera.CameraFragment;
 import com.example.liangwenchao.appdemo.ui.location.LocationFragment;
 import com.example.liangwenchao.appdemo.ui.sensor.SensorFragment;
-import com.example.liangwenchao.appdemo.ui.view.ViewFragment;
 
 import java.util.List;
 
