@@ -3,18 +3,11 @@ package com.example.liangwenchao.appdemo.ui.base.fragment;
 import android.content.Context;
 import android.net.Uri;
 import android.os.Bundle;
-import android.support.annotation.IdRes;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
-import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentTransaction;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-
-import com.example.liangwenchao.appdemo.ui.view.fragment.DrawBallFregment;
-
-import java.util.List;
 
 /**
  * Created by LiangWenchao on 2016/3/11.
@@ -99,40 +92,4 @@ public abstract class BaseFragment extends Fragment implements IBaseInitFragment
         // TODO: Update argument type and name
         void onFragmentInteraction(Uri uri);
     }
-
-    public static void switchFragment(int index, @IdRes int resouceId, Bundle args, String tag) {
-        if (mActivity != null) {
-            FragmentManager manager = mActivity.getSupportFragmentManager();
-            FragmentTransaction transaction = manager.beginTransaction();
-            List<Fragment> fragments = manager.getFragments();
-            if (fragments != null) {
-                for (Fragment fragment : fragments) {
-                    if (fragment.isVisible()) {
-                        transaction.hide(fragment);
-                    }
-                }
-            }
-            Fragment fragment = manager.findFragmentByTag(tag);
-
-            if (fragment == null) {
-                switch (index) {
-                    case DrawBallFregment.DRAWBALLFRAGMENTINDEX:
-                        fragment = new DrawBallFregment();
-                        break;
-                }
-
-                transaction.replace(resouceId, fragment, tag);
-
-            } else {
-                transaction.show(fragment);
-            }
-
-            ((BaseFragment) fragment).setArgs(args);
-
-            transaction.commitAllowingStateLoss();
-
-        }
-    }
-
-
 }

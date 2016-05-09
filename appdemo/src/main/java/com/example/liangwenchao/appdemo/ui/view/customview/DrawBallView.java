@@ -5,6 +5,7 @@ import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
 import android.util.AttributeSet;
+import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
 
@@ -39,7 +40,11 @@ public class DrawBallView extends View{
     public boolean onTouchEvent(MotionEvent event) {
         currentX = (int) event.getX();
         currentY = (int) event.getY();
+        Log.i("lwc","currentX = " + currentX);
+        Log.i("lwc","currentY = " + currentY);
+
         invalidate();
-        return super.onTouchEvent(event);
+//        return super.onTouchEvent(event);//返回这个只处理Down事件
+        return true;
     }
 }

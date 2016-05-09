@@ -56,7 +56,8 @@
         <activity android:name=".ui.location.BaiDuMapActivity"/>
         <activity android:name=".ui.sensor.LightSensorActivity"/>
         <activity android:name=".ui.sensor.OrientationSensorActivity"/>
-        <activity android:name=".ui.view.ViewContainerActivity"/>
+        <activity android:name=".ui.view.ViewContainerActivity"
+            android:theme="@style/MyNoActionBar"/>
     </application>
 
 </manifest>

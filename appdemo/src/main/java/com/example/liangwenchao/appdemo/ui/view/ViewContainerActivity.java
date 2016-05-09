@@ -1,14 +1,25 @@
 package com.example.liangwenchao.appdemo.ui.view;
 
+import android.content.Intent;
+import android.support.v4.app.Fragment;
+import android.util.Log;
+import android.view.View;
+import android.widget.TextView;
+
 import com.example.liangwenchao.appdemo.R;
 import com.example.liangwenchao.appdemo.ui.base.activity.BaseActivity;
+import com.example.liangwenchao.appdemo.ui.view.fragment.DrawBallFragment;
 
 /**
  * Created by admin on 2016/5/9.
  */
 public class ViewContainerActivity extends BaseActivity {
 
-    private int index = -1;
+    private String currentFragmentTag = "";
+    private String title;
+
+    private TextView titleTextView;
+
     @Override
     public void setContentView() {
         setContentView(R.layout.activity_view_container);
@@ -17,12 +28,32 @@ public class ViewContainerActivity extends BaseActivity {
     @Override
     public void initData() {
         super.initData();
-        index = getIntent().getIntExtra("index",0);
+        Intent intent = getIntent();
+        currentFragmentTag = intent.getStringExtra("fragmentTag");
+        title = intent.getStringExtra("title");
+        titleTextView.setText(title);
+        switchFragment(DrawBallFragment.DRAW_BALL_FRAGMENT_TAG, R.id.view_container, null, null);
 
+        View view = findViewById(R.id.view_container);
+        Log.i("lwc", "view = " + view);
     }
 
     @Override
     public void initView() {
-
+        titleTextView = (TextView) findViewById(R.id.title);
     }
+
+    private SwitchFragmentLisener lisener = new SwitchFragmentLisener() {
+        @Override
+        public Fragment createFragment(String tag) {
+            Fragment fragment = null;
+            switch (tag) {
+                case DrawBallFragment.DRAW_BALL_FRAGMENT_TAG:
+                    fragment = new DrawBallFragment();
+                    break;
+            }
+            return fragment;
+        }
+    };
+
 }

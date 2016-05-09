@@ -5,17 +5,18 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.example.liangwenchao.appdemo.R;
 import com.example.liangwenchao.appdemo.ui.base.fragment.BaseFragment;
 
 /**
  * Created by admin on 2016/5/9.
  */
-public class DrawBallFregment extends BaseFragment {
+public class DrawBallFragment extends BaseFragment {
 
-    public final static int DRAWBALLFRAGMENTINDEX = 1;
+    public final static String DRAW_BALL_FRAGMENT_TAG = "DrawBallFragment";
     @Override
     public View inflateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        return null;
+        return inflater.inflate(R.layout.fragmemt_draw_ball,null);
     }
 
     @Override
