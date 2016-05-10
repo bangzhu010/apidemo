@@ -9,6 +9,7 @@ import android.widget.TextView;
 import com.example.liangwenchao.appdemo.R;
 import com.example.liangwenchao.appdemo.ui.base.activity.BaseActivity;
 import com.example.liangwenchao.appdemo.ui.view.fragment.DrawBallFragment;
+import com.example.liangwenchao.appdemo.ui.view.fragment.NeonLightsFragment;
 
 /**
  * Created by admin on 2016/5/9.
@@ -32,7 +33,7 @@ public class ViewContainerActivity extends BaseActivity {
         currentFragmentTag = intent.getStringExtra("fragmentTag");
         title = intent.getStringExtra("title");
         titleTextView.setText(title);
-        switchFragment(DrawBallFragment.DRAW_BALL_FRAGMENT_TAG, R.id.view_container, null, null);
+        switchFragment(currentFragmentTag, R.id.view_container, null, lisener);
 
         View view = findViewById(R.id.view_container);
         Log.i("lwc", "view = " + view);
@@ -50,6 +51,9 @@ public class ViewContainerActivity extends BaseActivity {
             switch (tag) {
                 case DrawBallFragment.DRAW_BALL_FRAGMENT_TAG:
                     fragment = new DrawBallFragment();
+                    break;
+                case NeonLightsFragment.NEON_LIGHTS_FRAGMENT_TAG:
+                    fragment = new NeonLightsFragment();
                     break;
             }
             return fragment;

@@ -13,6 +13,7 @@ import android.widget.ListView;
 import com.example.liangwenchao.appdemo.R;
 import com.example.liangwenchao.appdemo.ui.base.fragment.BaseFragment;
 import com.example.liangwenchao.appdemo.ui.view.fragment.DrawBallFragment;
+import com.example.liangwenchao.appdemo.ui.view.fragment.NeonLightsFragment;
 
 /**
  * Created by admin on 2016/5/9.
@@ -22,10 +23,12 @@ public class ViewFragment extends BaseFragment implements AdapterView.OnItemClic
     private BaseAdapter mAdapter;
 
     private String[] viewTitles = new String[]{
-            "随手指移动的小球"
+            "随手指移动的小球",
+            "霓虹灯"
     };
     private String[] fragmentTags = new String[]{
-            DrawBallFragment.DRAW_BALL_FRAGMENT_TAG
+            DrawBallFragment.DRAW_BALL_FRAGMENT_TAG,
+            NeonLightsFragment.NEON_LIGHTS_FRAGMENT_TAG
     };
 
 
