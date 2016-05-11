@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/plus"
+            android:text="plus"
+            android:textAllCaps="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/minus"
+            android:text="minus"
+            android:textAllCaps="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/next"
+            android:text="next"
+            android:textAllCaps="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/iamge1"
+        android:layout_width="wrap_content"
+        android:layout_height="280dp"
+        android:src="@drawable/ic_launcher"
+        android:scaleType="fitCenter"/>
+    <ImageView
+        android:id="@+id/iamge2"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:background="#00f"
+        android:layout_margin="10dp"
+        android:src="@drawable/ic_launcher"
+        android:scaleType="fitCenter"/>
+
+</LinearLayout>

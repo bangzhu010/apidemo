@@ -11,6 +11,7 @@ import com.example.liangwenchao.appdemo.ui.base.activity.BaseActivity;
 import com.example.liangwenchao.appdemo.ui.view.fragment.CalculatorFragment;
 import com.example.liangwenchao.appdemo.ui.view.fragment.ClockFragment;
 import com.example.liangwenchao.appdemo.ui.view.fragment.DrawBallFragment;
+import com.example.liangwenchao.appdemo.ui.view.fragment.ImageBrowserFragment;
 import com.example.liangwenchao.appdemo.ui.view.fragment.NeonLightsFragment;
 
 /**
@@ -62,6 +63,9 @@ public class ViewContainerActivity extends BaseActivity {
                     break;
                 case ClockFragment.CLOCK_FRAGMENT_TAG:
                     fragment = new ClockFragment();
+                    break;
+                case ImageBrowserFragment.IMAGE_BROWSER_FRAGMENY_TAG:
+                    fragment = new ImageBrowserFragment();
                     break;
             }
             return fragment;
