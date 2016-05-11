@@ -13,6 +13,7 @@ import android.widget.ListView;
 import com.example.liangwenchao.appdemo.R;
 import com.example.liangwenchao.appdemo.ui.base.fragment.BaseFragment;
 import com.example.liangwenchao.appdemo.ui.view.fragment.CalculatorFragment;
+import com.example.liangwenchao.appdemo.ui.view.fragment.ClockFragment;
 import com.example.liangwenchao.appdemo.ui.view.fragment.DrawBallFragment;
 import com.example.liangwenchao.appdemo.ui.view.fragment.NeonLightsFragment;
 
@@ -26,12 +27,14 @@ public class ViewFragment extends BaseFragment implements AdapterView.OnItemClic
     private String[] viewTitles = new String[]{
             "随手指移动的小球",
             "霓虹灯",
-            "计算器"
+            "计算器",
+            "劳力士",
     };
     private String[] fragmentTags = new String[]{
             DrawBallFragment.DRAW_BALL_FRAGMENT_TAG,
             NeonLightsFragment.NEON_LIGHTS_FRAGMENT_TAG,
-            CalculatorFragment.CALCULATOR_FRAGMENT_TAG
+            CalculatorFragment.CALCULATOR_FRAGMENT_TAG,
+            ClockFragment.CLOCK_FRAGMENT_TAG
     };
 
 

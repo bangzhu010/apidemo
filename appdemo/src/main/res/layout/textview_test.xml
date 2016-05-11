@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20pt"
+        android:text="我爱java"
+        android:drawableRight="@drawable/ic_launcher"
+        android:textAllCaps="true"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:textSize="20pt"
+        android:text="我爱java我爱java我爱java我爱java我爱java我爱java我爱java"
+        android:drawableRight="@drawable/ic_launcher"
+        android:ellipsize="end"
+        android:textAllCaps="true"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:textSize="20pt"
+        android:text="wos 1096378578@qq.com hehe 10086  "
+        android:autoLink="email|phone"/>
+
+
+</LinearLayout>

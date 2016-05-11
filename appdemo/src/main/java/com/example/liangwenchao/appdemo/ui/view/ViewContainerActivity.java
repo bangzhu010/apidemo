@@ -9,6 +9,7 @@ import android.widget.TextView;
 import com.example.liangwenchao.appdemo.R;
 import com.example.liangwenchao.appdemo.ui.base.activity.BaseActivity;
 import com.example.liangwenchao.appdemo.ui.view.fragment.CalculatorFragment;
+import com.example.liangwenchao.appdemo.ui.view.fragment.ClockFragment;
 import com.example.liangwenchao.appdemo.ui.view.fragment.DrawBallFragment;
 import com.example.liangwenchao.appdemo.ui.view.fragment.NeonLightsFragment;
 
@@ -58,6 +59,9 @@ public class ViewContainerActivity extends BaseActivity {
                     break;
                 case CalculatorFragment.CALCULATOR_FRAGMENT_TAG:
                     fragment = new CalculatorFragment();
+                    break;
+                case ClockFragment.CLOCK_FRAGMENT_TAG:
+                    fragment = new ClockFragment();
                     break;
             }
             return fragment;
