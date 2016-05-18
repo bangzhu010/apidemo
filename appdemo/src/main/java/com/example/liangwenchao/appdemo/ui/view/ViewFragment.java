@@ -17,6 +17,7 @@ import com.example.liangwenchao.appdemo.ui.view.fragment.ClockFragment;
 import com.example.liangwenchao.appdemo.ui.view.fragment.DrawBallFragment;
 import com.example.liangwenchao.appdemo.ui.view.fragment.ImageBrowserFragment;
 import com.example.liangwenchao.appdemo.ui.view.fragment.NeonLightsFragment;
+import com.example.liangwenchao.appdemo.ui.view.fragment.QuickContactBadageFragment;
 
 /**
  * Created by admin on 2016/5/9.
@@ -30,14 +31,16 @@ public class ViewFragment extends BaseFragment implements AdapterView.OnItemClic
             "霓虹灯",
             "计算器",
             "劳力士",
-            "图片浏览器"
+            "图片浏览器",
+            "QuickContactBadage"
     };
     private String[] fragmentTags = new String[]{
             DrawBallFragment.DRAW_BALL_FRAGMENT_TAG,
             NeonLightsFragment.NEON_LIGHTS_FRAGMENT_TAG,
             CalculatorFragment.CALCULATOR_FRAGMENT_TAG,
             ClockFragment.CLOCK_FRAGMENT_TAG,
-            ImageBrowserFragment.IMAGE_BROWSER_FRAGMENY_TAG
+            ImageBrowserFragment.IMAGE_BROWSER_FRAGMENY_TAG,
+            QuickContactBadageFragment.QUICK_CONTACT_BADAGE_TAG
     };
 
 

@@ -13,6 +13,7 @@ import com.example.liangwenchao.appdemo.ui.view.fragment.ClockFragment;
 import com.example.liangwenchao.appdemo.ui.view.fragment.DrawBallFragment;
 import com.example.liangwenchao.appdemo.ui.view.fragment.ImageBrowserFragment;
 import com.example.liangwenchao.appdemo.ui.view.fragment.NeonLightsFragment;
+import com.example.liangwenchao.appdemo.ui.view.fragment.QuickContactBadageFragment;
 
 /**
  * Created by admin on 2016/5/9.
@@ -66,6 +67,9 @@ public class ViewContainerActivity extends BaseActivity {
                     break;
                 case ImageBrowserFragment.IMAGE_BROWSER_FRAGMENY_TAG:
                     fragment = new ImageBrowserFragment();
+                    break;
+                case QuickContactBadageFragment.QUICK_CONTACT_BADAGE_TAG:
+                    fragment = new QuickContactBadageFragment();
                     break;
             }
             return fragment;
