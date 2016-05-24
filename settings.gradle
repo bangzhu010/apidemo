@@ -1,4 +1,4 @@
-include ':appdemo', ':weather'
+include ':appdemo', ':weather', ':myapplication'
 include ':apiDemos'
 include ':仿美团外卖商家点菜效果'
 include ':coolweathermaster'
