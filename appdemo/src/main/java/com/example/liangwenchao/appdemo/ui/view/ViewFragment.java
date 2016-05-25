@@ -12,6 +12,8 @@ import android.widget.ListView;
 
 import com.example.liangwenchao.appdemo.R;
 import com.example.liangwenchao.appdemo.ui.base.fragment.BaseFragment;
+import com.example.liangwenchao.appdemo.ui.view.fragment.AdapterViewFragment;
+import com.example.liangwenchao.appdemo.ui.view.fragment.AutoCompleteTextViewFragment;
 import com.example.liangwenchao.appdemo.ui.view.fragment.CalculatorFragment;
 import com.example.liangwenchao.appdemo.ui.view.fragment.ClockFragment;
 import com.example.liangwenchao.appdemo.ui.view.fragment.DrawBallFragment;
@@ -32,7 +34,9 @@ public class ViewFragment extends BaseFragment implements AdapterView.OnItemClic
             "计算器",
             "劳力士",
             "图片浏览器",
-            "QuickContactBadage"
+            "QuickContactBadage",
+            "AadapterView",
+            "AutoCompleteTextView"
     };
     private String[] fragmentTags = new String[]{
             DrawBallFragment.DRAW_BALL_FRAGMENT_TAG,
@@ -40,7 +44,9 @@ public class ViewFragment extends BaseFragment implements AdapterView.OnItemClic
             CalculatorFragment.CALCULATOR_FRAGMENT_TAG,
             ClockFragment.CLOCK_FRAGMENT_TAG,
             ImageBrowserFragment.IMAGE_BROWSER_FRAGMENY_TAG,
-            QuickContactBadageFragment.QUICK_CONTACT_BADAGE_TAG
+            QuickContactBadageFragment.QUICK_CONTACT_BADAGE_TAG,
+            AdapterViewFragment.ADAPTER_VIEW_FRAGMENT_TAG,
+            AutoCompleteTextViewFragment.AUTO_COMPLETE_TEXTVIEW_FRAGMENT_TAG
     };
 
 

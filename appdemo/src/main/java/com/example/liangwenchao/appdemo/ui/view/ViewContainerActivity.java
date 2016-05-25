@@ -8,6 +8,8 @@ import android.widget.TextView;
 
 import com.example.liangwenchao.appdemo.R;
 import com.example.liangwenchao.appdemo.ui.base.activity.BaseActivity;
+import com.example.liangwenchao.appdemo.ui.view.fragment.AdapterViewFragment;
+import com.example.liangwenchao.appdemo.ui.view.fragment.AutoCompleteTextViewFragment;
 import com.example.liangwenchao.appdemo.ui.view.fragment.CalculatorFragment;
 import com.example.liangwenchao.appdemo.ui.view.fragment.ClockFragment;
 import com.example.liangwenchao.appdemo.ui.view.fragment.DrawBallFragment;
@@ -70,6 +72,12 @@ public class ViewContainerActivity extends BaseActivity {
                     break;
                 case QuickContactBadageFragment.QUICK_CONTACT_BADAGE_TAG:
                     fragment = new QuickContactBadageFragment();
+                    break;
+                case AdapterViewFragment.ADAPTER_VIEW_FRAGMENT_TAG:
+                    fragment = new AdapterViewFragment();
+                    break;
+                case AutoCompleteTextViewFragment.AUTO_COMPLETE_TEXTVIEW_FRAGMENT_TAG:
+                    fragment = new AutoCompleteTextViewFragment();
                     break;
             }
             return fragment;
