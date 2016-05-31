@@ -57,7 +57,9 @@
         <activity android:name=".ui.sensor.LightSensorActivity"/>
         <activity android:name=".ui.sensor.OrientationSensorActivity"/>
         <activity android:name=".ui.view.ViewContainerActivity"
-            android:theme="@style/MyNoActionBar"/>
+            android:theme="@android:style/Theme.Holo"
+
+           />
     </application>
 
 </manifest>

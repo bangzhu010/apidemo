@@ -42,13 +42,5 @@
 
 
 
-    <declare-styleable name="ImageContainer">
-        <attr name="mImageSpace"/>
-        <attr name="mOneImageWidthAndHeight"/>
-        <attr name="mSmallImageWidthAndHeight"/>
-    </declare-styleable>
-
-
-
 
 </resources>
